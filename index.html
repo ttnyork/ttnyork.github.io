@@ -1,22 +1,128 @@
 <!DOCTYPE html>
-<head>
-  <title>ttnyork.uk - Coming soon</title>
-  <meta name="description" content="The Things Network York, UK">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <style>
-    img {
-      margin:auto;
-      max-width:100%;
-      max-height:100%;
-      position:absolute;
-      top:0; left:0; right:0; bottom:0;
-    }
-  </style>
-</head>
+    <title>The Things Network York, UK</title>
 
-<body>
-  <div>
-    <img src="ttnyork-comingsoon.png" alt="The Things Network York, UK. Coming soon..."/>
+    <meta name="description" content="Building the next generation, LPWAN network for York, UK">
+    <meta name="author" content="info@ttnyork.uk">
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@ttnyork" />
+    <meta name="twitter:title" content="Building the next generation, LPWAN network for York, UK" />
+    <meta name="twitter:description" content="Get involved in making York a Smart City" />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+   
+
+  </head>
+  <body>
+
+  <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-9">
+			<div class="page-header">
+				<h1>
+					ttnyork<br><small>Building a low power, wide area, IoT network for the City of York</small>
+				</h1>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<img alt="TTN York logo" src="ttnyork.png">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<h3>
+			  What's this all about?
+			</h3>
+			<p>
+				We're aiming to build a low powered network that covers the City of York and enables smart sensors to connect to the <a href="https://en.wikipedia.org/wiki/Internet_of_things" target="_blank">"internet of things"</a>. These sensors could be river level sensors like those used on the <a href="https://flood.network/" target="_blank">Oxford flood network</a>, they could be pet trackers with built in GPS, soil PH level sensors in fields, boat trackers on the Ouse...the list goes on. All these devices have one things in common and that is the need for a way to transmit data to application that can process and act on it - that is where ttnyork comes in.
+      </p>
+      <h3>
+        What is an LPWAN?
+      </h3>
+      <p>
+        A Low Power Wide Area Network (LPWAN) is basically a fancy way of describing a wireless network that enables devices to send and receive data from the internet over many thousands of metres using very little power. Currently if you wanted to deploy a river level sensor you would either have to connect it with wires or use WiFi/Cellular technology which would require quite large batteries or solar panels due to the power levels needed for this type of technology. With an LPWAN it is possible to design sensors that run for many years on standard off the shelf batteries.
+        ttnyork is built using a flavour of LPWAN called LoraWan. LoraWan is named after the proprietary <b>Lo</b>ng<b>Ra</b>nge wireless system designed by <a href="http://www.semtech.com/wireless-rf/internet-of-things/what-is-lora/" target="_blank">Semtech</a>.
+			</p>
+      <p>
+        An LPWAN is made up of a number of gateways, these are fixed devices that connect to the internet and also have a radio transmitter and receiver through which they can talk to any sensors in range. A gateway relays messages between nodes and applications that can use their data, they can typically cover a radius of 1-2km in city environments, exact range depends on a number of factors including location, terrain, interference, etc. The more gateways a network has the more reliable and wide reaching it will be, if you have enough gateways you can also do interesting things using triangulation.
+        A gateway can cost between £200 and £1500 which varies based on make and model. The two gateways currently deployed in York were build from parts to keeps the costs low. The Things Network have built and are about to start shipping an <a href="https://shop.thethingsnetwork.com/index.php/product/the-things-gateway/" target="_blank"> indoor gateway</a> which brings simplicity and performance at a reasonable price point. York will need somewhere between 10-15 gateways to provide complete coverage.
+      </p>
+    </div>
   </div>
-</body>
+  <div class="row">
+    <div class="col-md-5">
+      <h3>
+        Which parts of York are covered?
+      </h3>
+      <p>
+        There are currently <a href="https://www.thethingsnetwork.org/u/mjholmes" target="_blank">two gateways</a> covering parts of York around the University of York campus (<a href="https://stem.org.uk" target="_blank">National STEM Centre</a>) and the South Bank/Millenium bridge areas. Both gateways are capable of supporting many hundreds of sensor nodes. The York <a hreaf="https://york.hackspace.org.uk" target="_blank">Hackspace</a> should also be in range.
+      <p>
+        We'd like to extend this coverage to include all areas within the outer ring road which will require more gateways and support/funding.
+      </p>
+      </p>
+			<p>
+				<a class="cta" href="mailto:hello@ttnyork.uk">Get in touch, email hello@ttnyork.uk</a>
+			</p>
+		</div>
+    <div class="col-md-7">
+    <img alt="Map of gateway coverage" class="center-block" src="ttnyorkmap.jpg">
+    </div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<h3>
+				Getting involved
+			</h3>
+			<p>
+				You can buy a gateway and contribute to the network, offer to host a gateway, build some sensors, help with this website (it really needs it!) or simply tweet about the cause. There's lots to be done and we'd like to build a community of volunteers and businesses who are passionate about seeing this succeed.
+			</p>
+      			<p>
+				<a class="cta" href="mailto:hello@ttnyork.uk">Get in touch, email hello@ttnyork.uk</a>
+			</p>
+		</div>
+		<div class="col-md-4">
+			<h3>
+				Using the network
+			</h3>
+			<p>
+				Anyone can use ttnyork, you simply need to sign up for an account on <a href="https://www.thethingsnetwork.org/">the things network</a> and begin building or deploying your sensors! If your sensors are mobile then you'll find <a target="_blank" href="https://www.thethingsnetwork.org/map">networks popping up in lots of locations</a> around the UK and beyond!
+			</p>
+      <p>
+        You can buy off the shelf <a href="https://shop.thethingsnetwork.com/index.php/product/the-things-node/" target="_blank">kits</a>, <a href="http://www.libelium.com/products/plug-sense/" target="_blank">fully developed sensors</a> or roll your own using the many <a href="https://www.thethingsnetwork.org/docs/devices/" target="_blank"tutorials</a> available on the internet.
+      </p>
+      <p>
+				<a class="cta" href="mailto:hello@ttnyork.uk">Get in touch, email hello@ttnyork.uk</a>
+			</p>
+		</div>
+		<div class="col-md-4">
+			<h3>
+				ttnyork on twitter
+			</h3>
+<a class="twitter-timeline" href="https://twitter.com/ttnyork" target="_blank">Tweets by ttnyork</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      			<p>
+				<a class="cta" href="mailto:hello@ttnyork.uk">Get in touch, email hello@ttnyork.uk</a>
+			</p>
+		</div>
+	</div>
+  
+      <footer class="footer text-center">
+        <a class="btn btn-lg btn-social-icon btn-twitter" href="https://twitter.com/ttnyork" title="ttnyork on twitter"><span class="fa fa-twitter"></span></a>
+        <a class="btn btn-lg btn-social-icon btn-github" href="https://github.com/ttnyork" title="ttnyork on github"><span class="fa fa-github"></span></a>
+        <a class="btn btn-lg btn-social-icon btn-google" href="mailto:hello@ttnyork.uk" title="ttnyork on github"><span class="fa fa-envelope-square"></span></a>
+      </footer>
+</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://use.fontawesome.com/11d4f5a834.js"></script>
+  </body>
 </html>
